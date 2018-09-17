@@ -9,6 +9,6 @@ console.log(publicPath);
 
 app.use(express.static(publicPath));
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('local host 3000 is working');
 });
