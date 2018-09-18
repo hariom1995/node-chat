@@ -4,6 +4,17 @@
         <title>main page</title>
     </head>
     <body>
-        <h3>Welcome to the index.html</h3>
+        <h3>Welcome to the chat application</h3>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io();
+
+            socket.on('connect', () => {
+                console.log('New user connect succesfully');
+            });
+            socket.on('disconnect', () => {
+                console.log('User disconnected');
+            });
+        </script>
     </body>
 </html>
