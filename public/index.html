@@ -2,9 +2,19 @@
 <html>
     <head>
         <title>main page</title>
+        
     </head>
     <body>
         <h3>Welcome to the chat application</h3>
+
+        <ol id="messages"></ol>
+        <form id="message-form">
+            <input type="text" name="message" placeholder="type message...">
+            <button>Send</button>
+        </form>
+
+
+        <script src="./js/libs/jquery-3.3.1.min.js"></script>
         <script src="/socket.io/socket.io.js"></script>
         <script src="/js/index.js"></script>
     </body>
